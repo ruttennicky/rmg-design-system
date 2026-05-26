@@ -19,7 +19,7 @@ export default function ButtonsPage() {
   return (
     <div>
       <PageHeader
-        title="🔘 Buttons"
+        title="Buttons"
         description="The RDS Button component maps directly to the Figma Button component set. It supports three variants, three sizes, optional leading/trailing icons, and disabled states."
       />
 

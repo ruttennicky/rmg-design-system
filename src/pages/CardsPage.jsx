@@ -7,7 +7,7 @@ export default function CardsPage() {
   return (
     <div>
       <PageHeader
-        title="🃏 Cards & Organisms"
+        title="Cards & Organisms"
         description="Higher-level layout components from the Figma Organisms section. Cards map to the Product component set (small, default, large, cover, usp and icon card variants)."
       />
 
@@ -77,7 +77,7 @@ export default function CardsPage() {
         <div className="card-grid">
           <Card variant="elevated">
             <CardBody>
-              <CardTitle size="small">📊 Wekelijkse statistieken</CardTitle>
+              <CardTitle size="small">Wekelijkse statistieken</CardTitle>
               <p style={{ fontSize: 'var(--text-body-sm-size)', color: 'var(--color-text-secondary)', marginTop: 'var(--space-4)' }}>
                 245.000 unieke bezoekers deze week — stijging van 12% t.o.v. vorige week.
               </p>
@@ -87,7 +87,7 @@ export default function CardsPage() {
 
           <Card variant="elevated">
             <CardBody>
-              <CardTitle size="small">🏆 Meest gelezen</CardTitle>
+              <CardTitle size="small">Meest gelezen</CardTitle>
               <p style={{ fontSize: 'var(--text-body-sm-size)', color: 'var(--color-text-secondary)', marginTop: 'var(--space-4)' }}>
                 "Top 10 restaurants Brussel" blijft de best gelezen pagina deze maand.
               </p>
@@ -97,7 +97,7 @@ export default function CardsPage() {
 
           <Card variant="elevated">
             <CardBody>
-              <CardTitle size="small">💡 Tip van de redactie</CardTitle>
+              <CardTitle size="small">Tip van de redactie</CardTitle>
               <p style={{ fontSize: 'var(--text-body-sm-size)', color: 'var(--color-text-secondary)', marginTop: 'var(--space-4)' }}>
                 Gebruik de nieuwe planningmodule om je contentkalender te beheren.
               </p>
@@ -114,7 +114,6 @@ export default function CardsPage() {
         <div className="card-grid">
           <Card variant="usp">
             <CardBody>
-              <div style={{ fontSize: 32 }}>📰</div>
               <CardTitle size="small">Onbeperkt lezen</CardTitle>
               <p style={{ fontSize: 'var(--text-body-sm-size)', color: 'var(--color-text-secondary)' }}>
                 Toegang tot alle premium artikels van al onze merken.
@@ -124,7 +123,6 @@ export default function CardsPage() {
 
           <Card variant="usp">
             <CardBody>
-              <div style={{ fontSize: 32 }}>📱</div>
               <CardTitle size="small">Op elk toestel</CardTitle>
               <p style={{ fontSize: 'var(--text-body-sm-size)', color: 'var(--color-text-secondary)' }}>
                 Lees op je smartphone, tablet of computer.
@@ -134,7 +132,6 @@ export default function CardsPage() {
 
           <Card variant="usp">
             <CardBody>
-              <div style={{ fontSize: 32 }}>🎙️</div>
               <CardTitle size="small">Luister-artikels</CardTitle>
               <p style={{ fontSize: 'var(--text-body-sm-size)', color: 'var(--color-text-secondary)' }}>
                 Laat artikels voorlezen met onze audio-lezer.

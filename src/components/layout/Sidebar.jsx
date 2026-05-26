@@ -2,12 +2,12 @@ import { NavLink } from 'react-router-dom'
 import './Sidebar.css'
 
 const navItems = [
-  { to: '/colors',     label: '🌈 Colors' },
-  { to: '/typography', label: '🅰️ Typography' },
-  { to: '/spacing',    label: '📐 Spacing & Radius' },
-  { to: '/buttons',    label: '🔘 Buttons' },
-  { to: '/forms',      label: '📝 Form Elements' },
-  { to: '/cards',      label: '🃏 Cards & Organisms' },
+  { to: '/colors',     label: 'Colors' },
+  { to: '/typography', label: 'Typography' },
+  { to: '/spacing',    label: 'Spacing & Radius' },
+  { to: '/buttons',    label: 'Buttons' },
+  { to: '/forms',      label: 'Form Elements' },
+  { to: '/cards',      label: 'Cards & Organisms' },
 ]
 
 export default function Sidebar({ theme, onToggleTheme }) {
@@ -53,7 +53,7 @@ export default function Sidebar({ theme, onToggleTheme }) {
 
       <div className="sidebar__footer">
         <button className="sidebar__theme-toggle" onClick={onToggleTheme} title="Toggle theme">
-          {theme === 'light' ? '🌙 Dark mode' : '☀️ Light mode'}
+          {theme === 'light' ? 'Dark mode' : 'Light mode'}
         </button>
         <div className="sidebar__version">v1.0 · Roularta Media Group</div>
       </div>

@@ -24,7 +24,7 @@ export default function FormsPage() {
   return (
     <div>
       <PageHeader
-        title="📝 Form Elements"
+        title="Form Elements"
         description="RDS form components cover all interactive input patterns from the Figma Atoms / Form section: text fields, toggles, checkboxes and radio buttons."
       />
 

@@ -68,7 +68,7 @@
 }
 
 .rds-card__media-placeholder::after {
-  content: '🖼';
+  content: '';
   font-size: 32px;
   opacity: 0.4;
 }

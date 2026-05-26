@@ -20,7 +20,7 @@ export default function SpacingPage() {
   return (
     <div>
       <PageHeader
-        title="📐 Spacing & Radius"
+        title="Spacing & Radius"
         description="RDS uses a spacing scale built on multiples of 4, with a few additional values for specific use cases. Border-radius tokens cover everything from sharp edges to pill shapes."
       />
 

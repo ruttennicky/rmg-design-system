@@ -30,7 +30,7 @@ export default function TypographyPage() {
   return (
     <div>
       <PageHeader
-        title="🅰️ Typography"
+        title="Typography"
         description="RDS uses Figtree as its sole typeface — a rounded, geometric sans-serif available in Regular (400) and Bold (700). All type tokens are defined as CSS custom properties in tokens.css."
       />
 

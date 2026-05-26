@@ -86,7 +86,7 @@ export default function ColorsPage() {
   return (
     <div>
       <PageHeader
-        title="🌈 Colors"
+        title="Colors"
         description="The RDS colour system is built on three layers: primitives (raw hex values), semantic tokens (alias variables), and component-level tokens. Click any swatch to copy the hex value."
       />
 
