@@ -1,0 +1,41 @@
+.rds-radio {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-8);
+  cursor: pointer;
+  user-select: none;
+}
+
+.rds-radio--disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.rds-radio__circle {
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background-color: var(--color-bg);
+  transition: border-color var(--transition-fast);
+}
+
+.rds-radio__circle--checked {
+  border-color: var(--color-primary-500);
+}
+
+.rds-radio__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: var(--radius-full);
+  background-color: var(--color-primary-500);
+}
+
+.rds-radio__label {
+  font-size: var(--text-label-size);
+  color: var(--color-text);
+}

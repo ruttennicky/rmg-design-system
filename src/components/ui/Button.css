@@ -1,0 +1,121 @@
+.rds-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-8);
+  border: 1px solid transparent;
+  border-radius: var(--radius-8);
+  font-family: var(--font-family);
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+  transition:
+    background-color var(--transition-fast),
+    border-color var(--transition-fast),
+    color var(--transition-fast),
+    box-shadow var(--transition-fast);
+  outline: none;
+}
+
+.rds-btn:focus-visible {
+  box-shadow: 0 0 0 3px var(--color-primary-300);
+}
+
+/* ── Sizes ────────────────────────────────────────────────── */
+.rds-btn--large {
+  height: var(--height-lg);
+  padding: 0 var(--space-24);
+  font-size: var(--text-btn-lg-size);
+  line-height: 1;
+}
+
+.rds-btn--default {
+  height: var(--height-md);
+  padding: 0 var(--space-24);
+  font-size: var(--text-btn-size);
+  line-height: 1;
+}
+
+.rds-btn--small {
+  height: var(--height-sm);
+  padding: 0 var(--space-16);
+  font-size: var(--text-btn-sm-size);
+  line-height: 1;
+}
+
+/* ── Primary ──────────────────────────────────────────────── */
+.rds-btn--primary {
+  background-color: var(--color-btn-primary-bg);
+  color: var(--color-btn-primary-text);
+  border-color: var(--color-btn-primary-border);
+  box-shadow: 0 2px 0 var(--color-primary-700);
+}
+
+.rds-btn--primary:hover:not(:disabled) {
+  background-color: var(--color-btn-primary-bg-hover);
+}
+
+.rds-btn--primary:active:not(:disabled) {
+  background-color: var(--color-primary-600);
+  box-shadow: none;
+  transform: translateY(1px);
+}
+
+/* ── Secondary ────────────────────────────────────────────── */
+.rds-btn--secondary {
+  background-color: var(--color-btn-secondary-bg);
+  color: var(--color-btn-secondary-text);
+  border-color: var(--color-btn-secondary-border);
+  box-shadow: 0 2px 0 var(--color-neutral-100);
+}
+
+.rds-btn--secondary:hover:not(:disabled) {
+  background-color: var(--color-neutral-50);
+  border-color: var(--color-neutral-200);
+}
+
+.rds-btn--secondary:active:not(:disabled) {
+  background-color: var(--color-neutral-100);
+  box-shadow: none;
+  transform: translateY(1px);
+}
+
+/* ── Tertiary ─────────────────────────────────────────────── */
+.rds-btn--tertiary {
+  background-color: transparent;
+  color: var(--color-btn-tertiary-text);
+  border-color: var(--color-btn-tertiary-border);
+}
+
+.rds-btn--tertiary:hover:not(:disabled) {
+  background-color: var(--color-neutral-50);
+  border-color: var(--color-neutral-300);
+}
+
+.rds-btn--tertiary:active:not(:disabled) {
+  background-color: var(--color-neutral-100);
+}
+
+/* ── Disabled ─────────────────────────────────────────────── */
+.rds-btn--disabled,
+.rds-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  box-shadow: none;
+  pointer-events: none;
+}
+
+/* ── Full width ───────────────────────────────────────────── */
+.rds-btn--full {
+  width: 100%;
+}
+
+/* ── Icon ─────────────────────────────────────────────────── */
+.rds-btn__icon {
+  display: inline-flex;
+  align-items: center;
+  font-size: 1.1em;
+  line-height: 1;
+  flex-shrink: 0;
+}

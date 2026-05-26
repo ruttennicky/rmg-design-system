@@ -1,0 +1,89 @@
+.rds-field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  width: 100%;
+}
+
+.rds-field__label {
+  font-size: var(--text-label-size);
+  line-height: var(--text-label-lh);
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.rds-field__required {
+  color: var(--color-critical);
+}
+
+.rds-field__input-wrap {
+  position: relative;
+}
+
+.rds-field__input {
+  width: 100%;
+  height: var(--height-md);
+  padding: 0 var(--space-16);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-8);
+  font-family: var(--font-family);
+  font-size: var(--text-body-size);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+  outline: none;
+}
+
+.rds-field__input::placeholder {
+  color: var(--color-text-secondary);
+}
+
+.rds-field__input:hover:not(:disabled) {
+  border-color: var(--color-neutral-400);
+}
+
+.rds-field__input:focus-visible {
+  border-color: var(--color-primary-500);
+  box-shadow: 0 0 0 3px var(--color-primary-100);
+}
+
+.rds-field__input--icon-left { padding-left: var(--space-40); }
+.rds-field__input--icon-right { padding-right: var(--space-40); }
+
+.rds-field__icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-text-secondary);
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+}
+
+.rds-field__icon--left  { left:  var(--space-12); }
+.rds-field__icon--right { right: var(--space-12); }
+
+/* Error state */
+.rds-field--error .rds-field__input {
+  border-color: var(--color-critical);
+}
+
+.rds-field--error .rds-field__input:focus-visible {
+  box-shadow: 0 0 0 3px var(--color-critical-light);
+}
+
+/* Disabled */
+.rds-field--disabled .rds-field__input {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.rds-field__error {
+  font-size: var(--text-label-sm-size);
+  color: var(--color-critical);
+}
+
+.rds-field__hint {
+  font-size: var(--text-label-sm-size);
+  color: var(--color-text-secondary);
+}

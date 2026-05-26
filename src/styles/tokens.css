@@ -1,0 +1,197 @@
+/* ============================================================
+   RDS – Roularta Design System Tokens
+   Generated from Figma file: RDS-Foundations
+   ============================================================ */
+
+:root {
+  /* ── Font ───────────────────────────────────────────────── */
+  --font-family: 'Figtree', sans-serif;
+
+  /* ── Primary colour scale ───────────────────────────────── */
+  --color-primary-50:  #fceded;
+  --color-primary-100: #f4d7d8;
+  --color-primary-200: #e7b1b3;
+  --color-primary-300: #f0868a;
+  --color-primary-400: #de494e;
+  --color-primary-500: #e42229;   /* brand primary */
+  --color-primary-600: #b5161b;
+  --color-primary-700: #870e12;
+  --color-primary-800: #660609;
+  --color-primary-900: #4d0205;
+  --color-primary-950: #2e0002;
+
+  /* ── Neutral scale ──────────────────────────────────────── */
+  --color-neutral-0:   #ffffff;
+  --color-neutral-50:  #f2f2f2;
+  --color-neutral-100: #d8d8d8;
+  --color-neutral-200: #c5c5c5;
+  --color-neutral-300: #aaaaaa;
+  --color-neutral-400: #999999;
+  --color-neutral-500: #808080;
+  --color-neutral-600: #747474;
+  --color-neutral-700: #5b5b5b;
+  --color-neutral-800: #464646;
+  --color-neutral-900: #363636;
+  --color-neutral-950: #121212;
+
+  /* ── Semantic colours ───────────────────────────────────── */
+  --color-info:             #0682c8;
+  --color-info-light:       #e6f3fa;
+  --color-info-dark:        #045c8e;
+  --color-success:          #1bb17b;
+  --color-success-light:    #e8f7f2;
+  --color-success-dark:     #137e57;
+  --color-warning:          #ed9a4e;
+  --color-warning-light:    #fdf5ed;
+  --color-warning-dark:     #a86d37;
+  --color-critical:         #e11b1b;
+  --color-critical-light:   #fce8e8;
+  --color-critical-dark:    #a01313;
+
+  /* ── Accent colours ─────────────────────────────────────── */
+  --color-accent-01: #a3abd5;
+  --color-accent-02: #c3c6da;
+  --color-accent-03: #85c5a5;
+  --color-accent-04: #9eceb8;
+  --color-accent-05: #95c0d6;
+  --color-accent-06: #adcde0;
+  --color-accent-07: #f2916b;
+  --color-accent-08: #f8b77d;
+  --color-accent-09: #f4a3a9;
+  --color-accent-10: #f7bdc1;
+  --color-accent-11: #fad255;
+  --color-accent-12: #feda77;
+  --color-accent-13: #ceb188;
+  --color-accent-14: #eacfa5;
+  --color-accent-15: #f39b90;
+  --color-accent-16: #f9c7b9;
+  --color-accent-17: #520c20;
+
+  /* ── Semantic token aliases (Light mode) ────────────────── */
+  --color-bg:               var(--color-neutral-0);
+  --color-bg-secondary:     var(--color-neutral-50);
+  --color-bg-inverse:       var(--color-neutral-950);
+  --color-bg-brand:         var(--color-primary-500);
+  --color-bg-brand-subtle:  var(--color-primary-50);
+
+  --color-text:             var(--color-neutral-900);
+  --color-text-secondary:   var(--color-neutral-600);
+  --color-text-tertiary:    var(--color-neutral-200);
+  --color-text-disabled:    var(--color-neutral-400);
+  --color-text-inverse:     var(--color-neutral-0);
+  --color-text-brand:       var(--color-primary-500);
+  --color-text-link:        var(--color-info);
+
+  --color-border:           var(--color-neutral-200);
+  --color-border-secondary: var(--color-neutral-100);
+  --color-border-brand:     var(--color-primary-500);
+
+  --color-btn-primary-bg:        var(--color-primary-500);
+  --color-btn-primary-bg-hover:  var(--color-primary-400);
+  --color-btn-primary-text:      var(--color-neutral-0);
+  --color-btn-primary-border:    var(--color-primary-600);
+
+  --color-btn-secondary-bg:      var(--color-neutral-0);
+  --color-btn-secondary-text:    var(--color-neutral-700);
+  --color-btn-secondary-border:  var(--color-neutral-100);
+
+  --color-btn-tertiary-bg:       transparent;
+  --color-btn-tertiary-text:     var(--color-neutral-700);
+  --color-btn-tertiary-border:   var(--color-neutral-200);
+
+  /* ── Spacing ────────────────────────────────────────────── */
+  --space-0:   0px;
+  --space-2:   2px;
+  --space-4:   4px;
+  --space-8:   8px;
+  --space-12:  12px;
+  --space-16:  16px;
+  --space-24:  24px;
+  --space-32:  32px;
+  --space-40:  40px;
+  --space-48:  48px;
+  --space-72:  72px;
+  --space-104: 104px;
+
+  /* ── Border radius ──────────────────────────────────────── */
+  --radius-0:    0px;
+  --radius-4:    4px;
+  --radius-6:    6px;
+  --radius-8:    8px;
+  --radius-12:   12px;
+  --radius-16:   16px;
+  --radius-20:   20px;
+  --radius-24:   24px;
+  --radius-32:   32px;
+  --radius-full: 9999px;
+
+  /* ── Component heights ──────────────────────────────────── */
+  --height-sm:  32px;
+  --height-md:  48px;
+  --height-lg:  56px;
+
+  /* ── Shadows ────────────────────────────────────────────── */
+  --shadow-sm:  0 1px 3px rgba(18, 18, 18, 0.10);
+  --shadow-md:  0 4px 12px rgba(18, 18, 18, 0.12);
+  --shadow-lg:  0 8px 24px rgba(18, 18, 18, 0.16);
+
+  /* ── Typography ─────────────────────────────────────────── */
+  --text-header-01-size:   40px;
+  --text-header-01-lh:     58px;
+  --text-header-02-size:   36px;
+  --text-header-02-lh:     52px;
+  --text-header-03-size:   32px;
+  --text-header-03-lh:     46px;
+  --text-header-04-size:   24px;
+  --text-header-04-lh:     34px;
+  --text-header-05-size:   18px;
+  --text-header-05-lh:     30px;
+  --text-header-06-size:   16px;
+  --text-header-06-lh:     26px;
+  --text-body-size:        16px;
+  --text-body-lh:          22px;
+  --text-body-sm-size:     14px;
+  --text-body-sm-lh:       20px;
+  --text-label-size:       14px;
+  --text-label-lh:         18px;
+  --text-label-sm-size:    12px;
+  --text-label-sm-lh:      16px;
+  --text-tag-size:         12px;
+  --text-tag-lh:           16px;
+  --text-btn-lg-size:      18px;
+  --text-btn-size:         16px;
+  --text-btn-sm-size:      14px;
+  --text-quote-size:       24px;
+  --text-quote-lh:         32px;
+
+  /* ── Transitions ────────────────────────────────────────── */
+  --transition-fast:   120ms ease;
+  --transition-normal: 200ms ease;
+}
+
+/* Dark mode overrides */
+[data-theme="dark"] {
+  --color-bg:              var(--color-neutral-950);
+  --color-bg-secondary:    #363636;
+  --color-bg-inverse:      var(--color-neutral-50);
+  --color-bg-brand:        #363636;
+  --color-bg-brand-subtle: #464646;
+
+  --color-text:            var(--color-neutral-0);
+  --color-text-secondary:  var(--color-neutral-200);
+  --color-text-tertiary:   var(--color-neutral-700);
+  --color-text-disabled:   var(--color-neutral-700);
+  --color-text-inverse:    var(--color-neutral-800);
+
+  --color-border:          var(--color-neutral-700);
+  --color-border-secondary: var(--color-neutral-800);
+
+  --color-btn-primary-bg:        var(--color-neutral-800);
+  --color-btn-primary-bg-hover:  var(--color-neutral-500);
+  --color-btn-primary-text:      var(--color-neutral-100);
+  --color-btn-primary-border:    var(--color-neutral-700);
+
+  --color-btn-secondary-bg:      var(--color-neutral-950);
+  --color-btn-secondary-text:    var(--color-neutral-700);
+  --color-btn-secondary-border:  var(--color-neutral-50);
+}

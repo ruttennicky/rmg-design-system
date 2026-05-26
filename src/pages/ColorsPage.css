@@ -1,0 +1,116 @@
+.swatch-row {
+  display: flex;
+  gap: 0;
+  border-radius: var(--radius-12);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  margin-bottom: var(--space-16);
+}
+
+.swatch {
+  flex: 1;
+  cursor: pointer;
+  transition: flex var(--transition-fast);
+  min-width: 60px;
+}
+
+.swatch:hover { flex: 2; }
+
+.swatch__block {
+  height: 80px;
+}
+
+.swatch__info {
+  padding: var(--space-8) var(--space-8);
+  background: var(--color-bg);
+  border-top: 1px solid var(--color-border-secondary);
+}
+
+.swatch__name {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.swatch__value {
+  font-size: 10px;
+  color: var(--color-text-secondary);
+  font-family: 'SF Mono', monospace;
+}
+
+.swatch__token {
+  font-size: 9px;
+  color: var(--color-text-tertiary);
+  font-family: 'SF Mono', monospace;
+  margin-top: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Semantic swatches */
+.semantic-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: var(--space-12);
+}
+
+.semantic-swatch {
+  border-radius: var(--radius-8);
+  padding: var(--space-16);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.semantic-swatch__name {
+  font-size: var(--text-label-size);
+  font-weight: 700;
+}
+
+.semantic-swatch__token {
+  font-size: 10px;
+  font-family: 'SF Mono', monospace;
+  opacity: 0.75;
+}
+
+.semantic-swatch__value {
+  font-size: 11px;
+  font-family: 'SF Mono', monospace;
+  opacity: 0.6;
+}
+
+/* Accent swatches */
+.accent-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+  gap: var(--space-8);
+}
+
+.accent-swatch {
+  cursor: pointer;
+  border-radius: var(--radius-8);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  transition: transform var(--transition-fast);
+}
+
+.accent-swatch:hover { transform: translateY(-2px); }
+
+.accent-swatch__block {
+  height: 56px;
+}
+
+.accent-swatch__label {
+  font-size: 10px;
+  font-weight: 700;
+  padding: var(--space-4) var(--space-8) 0;
+  color: var(--color-text);
+}
+
+.accent-swatch__value {
+  font-size: 9px;
+  padding: 0 var(--space-8) var(--space-4);
+  color: var(--color-text-secondary);
+  font-family: 'SF Mono', monospace;
+}
